@@ -58,3 +58,13 @@ HTTP/1.1 200 OK
 "email": "john@example.com",
 "phone": "123-456-7890"
 }
+
+### Check List
+1. GET: Get all users
+2. GET: No users. Get all users.
+3. POST: Add new user with default data.
+4. GET: Get user by ID.
+5. GET: Get user by not actual ID.
+6. GET: Get user with incorrect ID. Example, alphanumeric 'abc123'.
+7. DELETE: Delete user by ID.
+8. DELETE: Delete user by not actual ID.
