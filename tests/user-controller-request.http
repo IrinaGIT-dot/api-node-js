@@ -2,7 +2,7 @@
 GET https://examples.http-client.intellij.net/get
     ?generated-in=Aqua
 
-###
+### GET users list request
 # curl -X GET http://localhost:3000/users
 GET http://localhost:3000/users
 
