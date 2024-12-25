@@ -1,5 +1,4 @@
 import { test, expect } from '@playwright/test';
-import {ApiClient} from "../src/api-client";
 import {StatusCodes} from "http-status-codes";
 let baseURL: string = 'http://localhost:3000/users';
 let userID: number;
@@ -9,8 +8,6 @@ test.beforeAll(async ({ request }) => {
     const body = await response.json();
     userID = body.id
 });
-
-
 
 test.describe('User management API', () => {
 
@@ -48,6 +45,5 @@ test.describe('User management API', () => {
         console.log(responseBody)
         expect.soft(response.status()).toBe(StatusCodes.NOT_FOUND)
     });
-
 
 });

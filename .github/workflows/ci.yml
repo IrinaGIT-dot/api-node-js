@@ -30,8 +30,8 @@ jobs:
             compose-file: ./docker-compose.yaml
             up-flags: -d
 
-      - name: Run tests for empty users' list
+      - name: Run tests for empty user list
         run: npx playwright test tests/empty-user-list.test.ts
 
-      - name: Run remaining tests
+      - name: Run remaining user tests
         run: npx playwright test tests/user-controller.test.ts
